@@ -24,9 +24,9 @@
     </properties>
 
     <!--<parent>-->
-        <!--<groupId>org.springframework.boot</groupId>-->
-        <!--<artifactId>spring-boot-starter-parent</artifactId>-->
-        <!--<version>1.4.2.RELEASE</version>-->
+    <!--<groupId>org.springframework.boot</groupId>-->
+    <!--<artifactId>spring-boot-starter-parent</artifactId>-->
+    <!--<version>1.4.2.RELEASE</version>-->
     <!--</parent>-->
     <dependencyManagement>
         <dependencies>
@@ -46,31 +46,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <build>
-    <plugins>
-    <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <configuration>
-            <mainClass>com.huaxin</mainClass>
-            <layout>ZIP</layout>
-            <includes>
-                <include>
-                    <groupId>nothing</groupId>
-                    <artifactId>nothing</artifactId>
-                </include>
-            </includes>
-        </configuration>
-        <executions>
-            <execution>
-                <goals>
-                    <goal>repackage</goal>
-                </goals>
-            </execution>
-        </executions>
-    </plugin>
-    </plugins>
-    </build>
 
 </project>
